@@ -1,0 +1,116 @@
+body{font-family:system-ui,Arial;background:#0b1220;color:#e6eef8;margin:0;padding:16px}
+.card{background:#071028;padding:12px;border-radius:10px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+input,select,button{font:inherit;padding:8px;border-radius:6px;border:1px solid #334155;background:#081528;color:#e6eef8}
+button{background:#2563eb;border:none;color:white;cursor:pointer}
+table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid #122032}
+.badge{border-radius:4px;padding:2px 6px;color:#fff;font-size:12px}
+.hamburger-menu {
+  position: relative;
+}
+
+.menu-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.menu-btn:hover {
+  opacity: 0.8;
+}
+
+.menu-dropdown {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: fadeIn 0.2s ease;
+}
+
+.menu-dropdown a {
+  color: #e5e7eb;
+  padding: 10px 14px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.menu-dropdown a:hover {
+  background: #2563eb;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-5px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #e5e7eb;
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  gap: 10px;
+}
+
+.login-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #1f2937;
+  color: white;
+}
+
+.login-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #1d4ed8;
+}
+
+.login-links {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-links a {
+  color: #93c5fd;
+  cursor: pointer;
+}
+
+
+

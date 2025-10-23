@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>cc-tracker</Name>
+  <Repository>cc-tracker:latest</Repository>
+  <Network>bridge</Network>
+  <WebUI>http://[IP]:[PORT:3535]</WebUI>
+  <!-- If you shipped an icon via Dockerfile (served by app): -->
+  <Icon>https://raw.githubusercontent.com/Trapr67/cc-tracker/refs/heads/main/cc-tracker-app.png</Icon>
+
+  <Config Name="AppData" Target="/app/data" Default="/mnt/user/appdata/cc-tracker/data" Mode="rw" Description="Persistent data" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Web Port" Target="3535" Default="3535" Mode="tcp" Description="Web UI Port" Type="Port" Display="always" Required="true" Mask="false"/>
+
+  <Config Name="Admin Username" Target="ADMIN_USER" Default="admin" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Admin Password" Target="ADMIN_PASS" Default="changeme" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Session Secret" Target="FLASK_SECRET" Default="please-change" Type="Variable" Display="advanced" Required="true" Mask="true"/>
+
+  <Config Name="Timezone" Target="TIMEZONE" Default="America/Indiana/Indianapolis" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+  <Config Name="SMTP Host" Target="SMTP_HOST" Default="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SMTP Port" Target="SMTP_PORT" Default="587" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SMTP User" Target="SMTP_USER" Default="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SMTP Pass" Target="SMTP_PASS" Default="" Type="Variable" Display="advanced" Required="false" Mask="true"/>
+  <Config Name="Alert Email" Target="ALERT_EMAIL" Default="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+
+  <Config Name="Webhook URL" Target="WEBHOOK_URL" Default="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Twilio SID" Target="TWILIO_SID" Default="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Twilio Token" Target="TWILIO_TOKEN" Default="" Type="Variable" Display="advanced" Required="false" Mask="true"/>
+  <Config Name="Twilio From" Target="TWILIO_FROM" Default="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Twilio To" Target="TWILIO_TO" Default="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>

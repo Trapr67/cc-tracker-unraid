@@ -1,0 +1,1 @@
+If you prefer a light icon on the login page, rename cc-tracker-light.png to logo.png and and place it in /frontend/public
