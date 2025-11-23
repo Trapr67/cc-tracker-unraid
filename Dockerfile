@@ -1,5 +1,5 @@
 # --- Frontend build ---
-FROM node:18-bullseye as frontend-build
+FROM node:18-bullseye AS frontend-build
 WORKDIR /app/frontend
 COPY frontend/package.json ./
 RUN npm install --no-audit --no-fund
